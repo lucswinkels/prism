@@ -7,4 +7,55 @@ section {
     padding-right: 20px;
   }
 
+
+  span {
+    text-transform: uppercase;
+    color: $primary;
+    letter-spacing: 2px;
+  }
+
+  h1 {
+    font-size: calc(30px + 1.4vw);
+    margin-top: 5px;
+  }
+
+
+
+  &.small-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
+
+    h3 {
+      color: $paper;
+      font-size: calc(25px + 0.3vw);
+    }
+  }
+
+  &.quote {
+    background: $primary;
+  }
+
+  &.features {}
+
+  &.specs {
+    background: $cloud;
+  }
+
+  &.faq {}
+
+  &.purchase {
+    padding-top: 12vh;
+    padding-bottom: 12vh;
+    background: $cloud;
+    text-align: center;
+
+    h1 {
+      margin-bottom: 30px;
+    }
+  }
+
+  &.contact {
+    background: $secondary;
+  }
 }
