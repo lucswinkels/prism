@@ -36,9 +36,15 @@ section {
     background: $primary;
   }
 
-  &.features {}
+  &.features {
+    text-align: center;
+  }
 
   &.specs {
+    img {
+      width: 100%;
+    }
+
     background: $cloud;
   }
 
