@@ -1,8 +1,15 @@
 // Header
 header {
-    text-align: center;
-    padding-top: 25vh;
-    padding-bottom: 25vh;
+    height: 100vh;
+    background: blue;
+    @extend %flexbox;
+    align-items: center;
+
+    .col-lg-5 {
+        background: red;
+        vertical-align: middle;
+
+    }
 
     span {
         text-transform: uppercase;
@@ -11,24 +18,13 @@ header {
     }
 
     h1 {
-        font-size: calc(40px + 2vw);
-        margin-top: 30px;
-        margin-bottom: 30px;
+        margin-top: 5px;
+        font-size: calc(35px + 1.5vw);
+
     }
 
     p {
+        margin-top: 30px;
         margin-bottom: 30px;
-    }
-
-    .col-lg-4 {
-        margin: 0 auto;
-    }
-
-    iframe {
-        margin-top: 80px;
-        height: 70vh;
-        width: 100%;
-        @include border-radius(4px);
-        box-shadow: 0 9px 19px rgba(0, 0, 0, 0.15), 0 7px 6px rgba(0, 0, 0, 0.11);
     }
 }

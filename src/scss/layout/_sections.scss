@@ -15,15 +15,26 @@ section {
   }
 
   h1 {
-    font-size: calc(30px + 1.4vw);
+    font-size: calc(35px + 1.5vw);
     margin-top: 5px;
   }
 
-
+  &.video {
+    iframe {
+      height: 70vh;
+      width: 100%;
+      @include border-radius(10px);
+      box-shadow: 0 9px 19px rgba(0, 0, 0, 0.15), 0 7px 6px rgba(0, 0, 0, 0.11);
+    }
+  }
 
   &.small-section {
     padding-top: 80px;
     padding-bottom: 80px;
+  }
+
+  &.quote {
+    background: $primary;
     text-align: center;
 
     h3 {
@@ -32,57 +43,23 @@ section {
     }
   }
 
-  &.quote {
-    background: $primary;
-  }
-
   &.features {
-    text-align: center;
-
-    .feature {
-
-      margin-top: 50px;
-
-      i {
-        color: $primary;
-        font-size: calc(50px + 0.6vw);
-      }
-
-      h2 {
-        font-size: calc(18px + 0.6vw);
-        margin-top: 5px;
-        margin-bottom: 5px;
-      }
-
-      p {
-        max-width: 60%;
-        margin-left: 20%;
-      }
-    }
-  }
-
-  &.specs {
-    img {
-      width: 100%;
-    }
-
-    background: $cloud;
+    background: $wave;
   }
 
   &.faq {}
 
   &.purchase {
-    padding-top: 12vh;
-    padding-bottom: 12vh;
-    background: $cloud;
-    text-align: center;
-
-    h1 {
-      margin-bottom: 30px;
-    }
+    background: $wave;
   }
 
   &.contact {
     background: $secondary;
+    text-align: center;
+
+    h3 {
+      color: $paper;
+      font-size: calc(25px + 0.3vw);
+    }
   }
 }
