@@ -1,14 +1,18 @@
 // Header
 header {
     height: 100vh;
-    background: blue;
     @extend %flexbox;
     align-items: center;
 
     .col-lg-5 {
-        background: red;
-        vertical-align: middle;
+        @extend %flexbox;
+        justify-content: center;
+        flex-direction: column;
 
+        a {
+            max-width: 80px;
+            text-align: center;
+        }
     }
 
     span {
@@ -26,5 +30,6 @@ header {
     p {
         margin-top: 30px;
         margin-bottom: 30px;
+        max-width: 80%;
     }
 }

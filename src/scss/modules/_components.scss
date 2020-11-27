@@ -55,7 +55,7 @@
         left: calc(20px + 1em);
         position: relative;
         transition: all .35s;
-        width: 50%;
+        width: 90%;
 
         @include breakpoint(mobileonly) {
             left: 0;
