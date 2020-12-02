@@ -63,9 +63,14 @@ nav {
                     @include border-radius(4px);
                     padding: 13px 30px;
                     color: $primary;
+
+                    &:hover {
+                        color: $paper;
+                        background: $primary;
+                    }
                 }
 
-                &:focus,
+
                 &:hover {
                     color: $primary;
 
