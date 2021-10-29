@@ -1,2 +1,2 @@
 # prism
-Prism website for FHICT project
+Informative website for FHICT schoolproject.
